@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Sistema de Bicicletário</title>
+</head>
+<body>
+    <h1>Emprestar Bicicleta</h1>
+    <form action="/api/emprestimos/emprestar" method="POST">
+        <label>Usuário ID:</label><input type="number" name="usuarioId" required><br>
+        <label>Bicicleta ID:</label><input type="number" name="bicicletaId" required><br>
+        <button type="submit">Emprestar</button>
+    </form>
+
+    <h1>Devolver Bicicleta</h1>
+    <form action="/api/emprestimos/devolver" method="POST">
+        <label>Empréstimo ID:</label><input type="number" name="emprestimoId" required><br>
+        <button type="submit">Devolver</button>
+    </form>
+</body>
